@@ -1,8 +1,13 @@
 <?php
-header("location: form_insere.php");
-exit;
+$shouldRedirect = true; // Defina sua condição aqui
+
+if ($shouldRedirect) {
+    header("Location: form_insere.php");
+    exit; // Garante que o script PHP seja interrompido após o redirecionamento
+}
 ?>
 
+<!DOCTYPE html>
 <html>
 <head>
     <title>PHP Test</title>
@@ -18,7 +23,5 @@ exit;
     <a href='form_insere.php'>cadastro</a><br>
     <a href='excluir.php'>excluir.php</a><br>
     <a href='editar_usuario.php'>editar_usuario.php</a><br>
-   
-  
 </body>
 </html>
