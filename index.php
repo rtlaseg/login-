@@ -1,5 +1,6 @@
 <?php
 header("location: form_insere.php");
+exit;
 ?>
 
 <html>
